@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tro2Z-6l)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23170915&assignment_repo_type=AssignmentRepo)
 # Lab 01: Lógica de Programação com Blockly 🐢
 
 Bem-vindo(a) à sua atividade prática de Lógica Computacional! Siga os passos abaixo para completar o desafio.
@@ -44,13 +46,13 @@ Olhando para os blocos que você usou para resolver o jogo no nível 10, imagine
 
 ## 3. Estratégia Utilizada
 *Explique com suas palavras como você resolveu o problema. Qual foi a lógica?*
-> Escreva aqui... Exemplo: Percebi que o padrão se repetia 3 vezes, então criei um bloco de função para desenhar a ponta da estrela e usei um loop...
+> Minha estratégia foi dividida em duas partes. Primeiro, construí as estrelas usando uma estrutura de repetição: a tartaruga avança 50 e muda o ângulo em 144º para desenhar todos os traços da estrela. Aí coloquei isso dentro de um loop maior para que, após terminar uma estrela, ela avance para a próxima posição e repita o processo três vezes. Depois disso, parti para a construção da lua. A tática foi desenhar um círculo branco preenchido e, logo em seguida, desenhar um círculo preto um pouco deslocado por cima dele. Essa sobreposição apaga parte do branco e cria o formato de uma lua minguante
 
 ## 4. Desafio:
-**A)** Escreva aqui...
+**A)** O loop principal precisaria ter 6 repetições (já que o hexágono tem 6 lados), e a tartaruga deve virar 60 graus a cada linha desenhada.
   
-**B)** Escreva aqui...
+**B)** Depois de desenhar um hexágono completo, o ângulo de giro antes de começar o próximo deve ser de 90 graus.
   
-**C)** Escreva aqui...
+**C)** A lógica que usei foi a seguinte: para a letra A, eu sei que o ângulo interno de um hexágono é 120°. Como a tartaruga se move em linha reta (180°), o giro que ela precisa dar para formar esse canto é a diferença entre os dois (180° - 120° = 60°). Já para a letra B, como quero distribuir 4 hexágonos em um círculo completo (360°), basta dividir 360 por 4, o que resulta em um giro de 90° entre cada figura.
 
 ---
